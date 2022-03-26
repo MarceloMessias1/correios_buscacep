@@ -3,7 +3,11 @@ package Navegadore;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+/**
+ * 
+ * @author Tatiane Augusto
+ *
+ */
 public class Navegadores {
 
 	public static WebDriver driver;
@@ -17,5 +21,7 @@ public class Navegadores {
 		driver.manage().window().maximize();
 
 	}
-
+/**
+ * 
+ */
 }
