@@ -4,8 +4,9 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
-import Navegadore.Navegadores;
+import Navegadores.Navegadores;
 
 public class Metodos extends Navegadores {
 
@@ -43,8 +44,8 @@ public class Metodos extends Navegadores {
 				driver.switchTo().window(abaFilha);
 				System.out.println("Aba filha é " + driver.getTitle());
 			}
-
 		}
+
 	}
 
 }

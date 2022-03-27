@@ -1,5 +1,6 @@
-package Navegadore;
+package Navegadores;
 
+import org.junit.After;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,8 +22,9 @@ public class Navegadores {
 		driver.manage().window().maximize();
 
 	}
-/**
- *@author Marcelo Messias   
- */
+	@After
 	
+	public void fecharNavegador() {
+		driver.quit();
+	}
 }

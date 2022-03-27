@@ -1,5 +1,7 @@
 package Teste;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -14,13 +16,14 @@ public class BuscarCepCorreios {
 	public void testBuscarCep() {
 
 		System.out.println("Teste iniciado com sucesso");
-		
+
 		By pesquisaCep = By.id("relaxation");
-		
+
 		metodos.abrirNavegador();
 		metodos.preencher(pesquisaCep, "06544-300");
 		metodos.submit(pesquisaCep);
 		metodos.mudarAba();
+		metodos.fecharNavegador();
 	}
 
 }
